@@ -1,10 +1,10 @@
 import React from "react";
-import Sectors from "./Sectors";
+import Sectors from "../pages/Sectors";
 import ProductList from "./ProductList";
 const MainContent = ({ selected }) => {
   switch (selected) {
-    case "Home":
-      return <div>Welcome to the Home page!</div>;
+    case "Home":     
+      return <div className="text-white">Welcome to the Home page!</div>;
     case "Sectors":
       return <Sectors/>;
     case "Products":

@@ -1,6 +1,6 @@
 const ProductList = () => {
   return (
-    <section className="bg-gray-50 py-16 px-4">
+    <section className="bg-gray-50 py-16 px-4 rounded-2xl">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-12">
