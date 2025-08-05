@@ -1,6 +1,11 @@
 import React from "react";
 import Sectors from "../pages/Sectors";
 import ProductList from "./ProductList";
+import SupplierForm from "../pages/SupplierForm";
+import ContactUs from "../pages/ContactUs";
+import Reviews from "../pages/Reviews";
+import AboutUs from "../pages/AboutUs";
+import Articles from "../pages/Articles";
 const MainContent = ({ selected }) => {
   switch (selected) {
     case "Home":     
@@ -10,15 +15,15 @@ const MainContent = ({ selected }) => {
     case "Products":
       return <ProductList />;
     case "Articles":
-      return <div>Read our latest Articles.</div>;
-    case "Supplier":
-      return <div>Supplier information and application.</div>;
-    case "Affiliate":
-      return <div>Affiliate program details.</div>;
+      return <Articles />;
     case "Reviews":
-      return <div>Customer Reviews and feedback.</div>;
+      return <Reviews />;
     case "Contact":
-      return <div>Contact us page content.</div>;
+      return <ContactUs />;
+    case "Join as Supplier":
+      return <SupplierForm />;
+    case "About Us":
+      return <AboutUs />;
     default:
       return <div>Select a menu item above.</div>;
   }

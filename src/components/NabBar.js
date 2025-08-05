@@ -8,10 +8,10 @@ const Navbar = ({ onMenuClick }) => {
     "Sectors",
     "Products",
     "Articles",
-    "Supplier",
-    "Affiliate",
     "Reviews",
     "Contact",
+    "About Us",
+    "Join as Supplier",
   ];
 
   const toggleMobileMenu = () => {
@@ -44,15 +44,7 @@ const Navbar = ({ onMenuClick }) => {
           ))}
         </div>
 
-        {/* CTA Button */}
-        <div className="hidden md:inline-block">
-          <a
-            href="#"
-            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
-          >
-            Join as Supplier
-          </a>
-        </div>
+    
 
         {/* Mobile menu button */}
         <div className="md:hidden">
